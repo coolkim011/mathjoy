@@ -1,0 +1,172 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width, initial-scale=1"><title>예비초·초등 수학 | 매쓰조이수학 교습소</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"><style>
+  /* Clean white page with one red accent (taken from the academy's sign). Phone-width column, big readable type, docked red CTA. */
+  :root {
+    --red: #D8352A; --red-dark: #B02419; --red-soft: #FDEBE9;
+    --ink: #1B1D26; --soft: #5A5F70; --line: #E8E9EF; --mist: #F6F6F9; --white: #fff;
+    --sans: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  }
+  :root { color-scheme: light; }
+  [hidden] { display: none !important; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #ECEDF2; color: var(--ink); font-family: var(--sans); font-weight: 500; font-size: 18px; line-height: 1.7; word-break: keep-all; overflow-wrap: break-word; padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
+  h1, h2, h3, p, dl, dd, figure, ul, ol { margin: 0; padding: 0; }
+  ul, ol { list-style: none; }
+  h1, h2, h3 { line-height: 1.3; text-wrap: balance; font-weight: 900; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--red); outline-offset: 3px; border-radius: 8px; }
+  .page { max-width: 560px; margin: 0 auto; background: var(--white); overflow: hidden; }
+  section { padding: 56px 20px; }
+  section.alt { background: var(--mist); }
+  .kicker { display: block; margin-bottom: 8px; font-size: 1rem; font-weight: 900; color: var(--red); }
+  h2 { font-size: clamp(1.7rem, 7.6vw, 2.2rem); }
+  .lead { margin-top: 12px; font-size: 1.08rem; color: var(--soft); }
+
+  .ribbon { background: var(--ink); color: #fff; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 20px; }
+  .ribbon button { min-height: 34px; padding: 0 14px; border-radius: 99px; border: 1.5px solid #fff; background: transparent; color: #fff; font: inherit; font-size: 0.8rem; font-weight: 700; cursor: pointer; }
+
+  .hero { padding: 34px 20px 30px; text-align: center; background: linear-gradient(180deg, var(--red-soft) 0%, #fff 70%); }
+  .badge { display: inline-block; background: var(--red); color: #fff; border-radius: 99px; padding: 5px 16px; font-size: 0.92rem; font-weight: 700; }
+  .hero .en { margin-top: 18px; font-size: 1.05rem; font-weight: 900; letter-spacing: 0.14em; color: var(--red); }
+  .hero h1 { margin-top: 2px; font-size: clamp(2.5rem, 12vw, 3.5rem); line-height: 1.2; }
+  .hero h1 em { font-style: normal; color: var(--red); }
+  .hero .sub { margin-top: 14px; font-size: 1.15rem; font-weight: 700; color: var(--soft); line-height: 1.6; }
+  .hero .photo { margin: 26px 0 0; border-radius: 20px; overflow: hidden; box-shadow: 0 14px 34px rgba(27, 29, 38, 0.18); }
+  .hero .photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .hours { margin-top: 18px; display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; border: 2px solid var(--red); border-radius: 16px; padding: 14px 12px; background: #fff; font-weight: 900; }
+  .hours b { color: var(--red); font-size: 1.5rem; }
+  .hours span { font-size: 1.1rem; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 54px; padding: 0 24px; border-radius: 99px; font: inherit; font-weight: 900; font-size: 1.1rem; text-decoration: none; cursor: pointer; border: 2px solid var(--red); background: var(--red); color: #fff; }
+  .btn.block { display: flex; width: 100%; }
+  .btn.small { min-height: 46px; padding: 0 18px; font-size: 1rem; }
+  .btn.ghost { background: #fff; color: var(--red); }
+  .btn svg { width: 22px; height: 22px; flex: none; }
+  .hero .btn { margin-top: 18px; }
+
+  .quote { padding: 44px 20px; text-align: center; background: var(--red); color: #fff; }
+  .quote small { display: block; font-weight: 700; opacity: 0.9; }
+  .quote b { display: block; margin-top: 4px; font-size: clamp(1.9rem, 9vw, 2.6rem); font-weight: 900; line-height: 1.25; }
+
+  .feats { display: grid; gap: 12px; margin-top: 24px; }
+  .feats li { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 14px; align-items: center; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+  .feats i { width: 52px; height: 52px; border-radius: 50%; background: var(--red-soft); color: var(--red); display: grid; place-items: center; font-style: normal; font-weight: 900; font-size: 1.05rem; }
+  .feats h3 { font-size: 1.15rem; }
+  .feats p { margin-top: 2px; font-size: 1rem; color: var(--soft); line-height: 1.55; }
+
+  .sub-h { margin-top: 32px; font-size: 1.2rem; }
+  .steps { display: grid; gap: 10px; margin-top: 14px; }
+  .steps li { display: flex; align-items: center; gap: 14px; background: #fff; border: 1px solid var(--line); border-left: 5px solid var(--red); border-radius: 12px; padding: 14px 18px; }
+  .steps span { font-weight: 900; font-size: 0.95rem; color: var(--red); }
+  .steps b { font-weight: 900; font-size: 1.15rem; }
+  .note { margin-top: 18px; font-size: 1.02rem; font-weight: 700; color: var(--soft); }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+  .chips span { background: var(--red-soft); color: var(--red-dark); border-radius: 99px; padding: 6px 14px; font-weight: 700; font-size: 0.98rem; }
+  .tl-row { display: grid; grid-template-columns: 3.6rem minmax(0, 1fr); gap: 10px; align-items: center; margin-top: 24px; font-weight: 900; }
+  .tl-bar { display: grid; grid-template-columns: 3fr 2.2fr; border-radius: 12px; overflow: hidden; }
+  .tl-bar i { font-style: normal; font-weight: 900; font-size: 0.92rem; line-height: 1.4; padding: 12px 6px; text-align: center; }
+  .tl-bar i small { display: block; font-size: 0.85rem; font-weight: 700; opacity: 0.95; white-space: nowrap; }
+  .tl-bar .el { background: var(--red); color: #fff; }
+  .tl-bar .mid { background: var(--ink); color: #fff; }
+  .tl-end { margin-top: 6px; text-align: right; font-size: 0.9rem; font-weight: 700; color: var(--soft); }
+  .free { margin-top: 10px; font-weight: 900; font-size: 1.1rem; color: var(--red); }
+  .flow { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-top: 14px; }
+  .flow li:not(.arr) { flex: 1; }
+  .flow b { display: block; background: var(--ink); color: #fff; border-radius: 12px; padding: 14px 8px; font-weight: 900; font-size: 1.02rem; text-align: center; }
+  .flow .arr { color: var(--red); font-weight: 900; font-size: 1.2rem; }
+
+  .photos { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; margin-top: 24px; }
+  .shot { margin: 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: #fff; min-width: 0; }
+  .shot img { display: block; width: 100%; height: auto; }
+  .photos .shot img { aspect-ratio: 4 / 3; object-fit: cover; }
+  .shot figcaption { padding: 10px 14px 12px; }
+  .shot b { display: block; font-size: 1.02rem; font-weight: 900; }
+  .shot span { display: block; font-size: 0.92rem; color: var(--soft); line-height: 1.5; }
+  .wide { grid-column: 1 / -1; }
+
+  .phonebox, .sample { margin-top: 20px; background: #fff; border: 2px solid var(--red); border-radius: 18px; padding: 20px 18px; }
+  .phonebox span, .sample span { display: block; font-size: 0.95rem; font-weight: 700; color: var(--soft); }
+  .phonebox b { display: block; margin-top: 4px; font-weight: 900; font-size: clamp(1.9rem, 9vw, 2.4rem); color: var(--red); user-select: all; -webkit-user-select: all; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .sample { border-color: var(--line); }
+  .sample p { margin-top: 8px; padding: 12px 14px; border-radius: 12px; background: var(--mist); font-weight: 700; line-height: 1.8; user-select: all; -webkit-user-select: all; }
+  .sample .btn { margin-top: 12px; }
+  .fine { margin-top: 14px; font-size: 0.92rem; color: var(--soft); }
+
+  dl.info { margin-top: 24px; border-top: 3px solid var(--red); }
+  dl.info > div { display: grid; grid-template-columns: 5.4rem minmax(0, 1fr); gap: 12px; padding: 16px 6px; border-bottom: 1px solid var(--line); }
+  dl.info dt { color: var(--soft); font-size: 0.95rem; font-weight: 700; }
+  dl.info dd { font-weight: 900; font-size: 1.08rem; }
+  dl.info small { display: block; font-weight: 500; font-size: 0.92rem; color: var(--soft); margin-top: 2px; }
+  .sign { max-width: 360px; margin: 22px auto 0; }
+  .sign img { aspect-ratio: 5 / 6; object-fit: cover; }
+
+  footer { background: var(--ink); color: #B9BCCB; padding: 30px 20px 40px; font-size: 0.9rem; display: grid; gap: 6px; }
+  footer strong { color: #fff; font-size: 1.05rem; font-weight: 900; }
+
+  .dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; pointer-events: none; }
+  .dock .in { max-width: 560px; margin: 0 auto; padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px)); pointer-events: auto; background: rgba(255, 255, 255, 0.96); border-top: 1px solid var(--line); }
+  .dock .btn { min-height: 58px; font-size: 1.15rem; }
+  .toast { position: fixed; left: 50%; bottom: calc(104px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: #fff; padding: 12px 20px; border-radius: 99px; font-size: 0.98rem; font-weight: 700; max-width: calc(100% - 32px); text-align: center; z-index: 30; }
+
+  .photos .shot img { aspect-ratio: var(--ar, 4 / 3); object-position: var(--op, center); }
+  .hero .photo img { aspect-ratio: var(--ar, 4 / 3); object-position: var(--op, center); }
+  .quotes { display: grid; gap: 12px; margin-top: 24px; }
+  .quotes blockquote { margin: 0; background: #fff; border: 1px solid var(--line); border-left: 5px solid var(--red); border-radius: 14px; padding: 16px 18px; font-weight: 700; line-height: 1.65; }
+  .quotes cite { display: block; margin-top: 6px; font-style: normal; font-size: 0.9rem; font-weight: 500; color: var(--soft); }
+  .ribbon a { color: #fff; text-underline-offset: 3px; }
+  .ribbon .nav { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+  .ribbon .nav b { color: #FFC9C4; }
+  .acts { display: grid; gap: 14px; margin-top: 24px; }
+</style></head><body><div class="page"><header class="hero"><span class="badge">예비초1 ~ 초등</span><p class="en">MATH JOY</p><h1>처음 만나는 수학,<br><em>즐겁게</em> 시작해요</h1><p class="sub">연산을 단단하게 다지고,<br>교구로 만져 보며 개념을 익혀요.</p>
+<figure class="photo" style="--ar:4 / 5;--op:center 55%"><img src="photos/cubes.jpg" alt="쌓기나무를 쌓는 아이(얼굴은 모자이크 처리)"></figure>
+<div class="hours"><b>초등부</b><span>월~금 오후 1시 – 5시</span></div><a class="btn block" href="#apply" data-go="apply">편하게 문의하기</a></header><div class="quote"><small>교육 철학</small><b>수학은 꾸준함이다</b></div><section><span class="kicker">초등 수업 포인트</span><h2>수학이 어렵다고<br>느끼기 전에</h2><p class="lead">기초 연산부터 교구 활동까지, 아이의 속도에 맞춰 한 걸음씩 가요.</p><ul class="feats"><li><i>+</i><div><h3>연산 강화</h3><p>기본 연산을 단단하게 다져요.</p></div></li><li><i>◇</i><div><h3>교구 활용</h3><p>눈으로 보고 만지며 개념을 익혀요.</p></div></li><li><i>1:1</i><div><h3>개별진도</h3><p>아이마다 다른 속도와 역량에 맞춰 수업해요.</p></div></li><li><i>6</i><div><h3>최대 6명 소수정예</h3><p>한 타임 최대 6명이라 아이 한 명 한 명을 세심하게 살필 수 있어요.</p></div></li></ul><h3 class="sub-h">단계별 학습</h3><ol class="steps"><li><span>STEP 01</span><b>개념 잡기</b></li><li><span>STEP 02</span><b>문제해결력 강화</b></li><li><span>STEP 03</span><b>사고력 강화</b></li></ol><p class="note">단원평가와 학기말 평가로 아이의 성장을 함께 확인해요.</p></section><section class=alt><span class="kicker">수업 모습</span><h2>손으로 만지고,<br>눈으로 확인해요</h2><div class="photos"><figure class="shot " style="--ar:4 / 3;--op:center"><img src="photos/class.jpg" alt="쌓기나무 교구로 공부하는 아이들(얼굴은 모자이크 처리)" loading="lazy"><figcaption><b>쌓기나무로 함께 공부해요</b><span>교재의 모양을 쌓기나무로 직접 만들어 봐요.</span></figcaption></figure><figure class="shot " style="--ar:4 / 3;--op:center"><img src="photos/straw.jpg" alt="빨대와 연결 조각으로 만든 입체도형" loading="lazy"><figcaption><b>빨대로 만드는 입체도형</b><span>도형의 꼭짓점과 모서리를 직접 확인해요.</span></figcaption></figure><figure class="shot " style="--ar:4 / 3;--op:center"><img src="photos/cards.jpg" alt="카드 게임을 하는 아이들(얼굴은 모자이크 처리)" loading="lazy"><figcaption><b>카드로 하는 놀이</b><span>규칙을 찾으며 즐겁게 생각해요.</span></figcaption></figure></div></section><section><span class="kicker">수업 안내</span><h2>시간표와 과정</h2>
+<div class="chips"><span>교과수학</span><span>사고력수학</span><span>예비초1 ~ 중등</span><span>단원평가</span><span>학기말 평가</span></div>
+<div class="tl-row"><span>월~금</span><div class="tl-bar"><i class="el">초등부<small>13:00 – 17:00</small></i><i class="mid">중등부<small>17:00 – 19:30</small></i></div></div>
+<h3 class="sub-h">등록 과정</h3><p class="free">무료체험수업으로 먼저 만나 보세요</p>
+<ol class="flow"><li><b>실력 확인</b></li><li class="arr" aria-hidden="true">→</li><li><b>상담</b></li><li class="arr" aria-hidden="true">→</li><li><b>등록</b></li></ol>
+<p class="note">실력 확인(레벨테스트)은 지금 아이의 상태를 편하게 알아보는 시간이에요.</p></section><section class="alt" id="apply"><span class="kicker">문의하기</span><h2>부담 없이<br>문의해 주세요</h2>
+<p class="lead">궁금하신 점은 학생 이름과 학년을 문자로 남겨 주세요. 확인하는 대로 따뜻하게 전화드릴게요.</p>
+<div class="phonebox"><span>교습소 문자 · 전화</span><b>010-5590-4959</b><div class="row">
+<button type="button" class="btn small" data-copy="010-5590-4959" data-msg="전화번호를 복사했어요">번호 복사</button>
+<a class="btn small ghost" href="tel:01055904959">전화하기</a>
+<a class="btn small ghost" href="sms:01055904959?body=%ED%95%99%EC%83%9D%20%EC%9D%B4%EB%A6%84%3A%20%0A%ED%95%99%EB%85%84%3A%20">문자 보내기</a></div></div>
+<div class="sample"><span>이렇게 남겨 주시면 돼요</span><p>학생 이름: <br>학년: </p><button type="button" class="btn small" data-copy="학생 이름: &#10;학년: " data-msg="문자 양식을 복사했어요">양식 복사</button></div>
+<p class="fine">버튼이 열리지 않으면 번호를 복사해서 문자 앱에 붙여넣어 주세요.</p></section><section><span class="kicker">교습소 안내</span><h2>이용 안내</h2><dl class="info">
+<div><dt>교습소</dt><dd>매쓰조이수학 교습소</dd></div>
+<div><dt>과목</dt><dd>교과수학 · 사고력수학</dd></div>
+<div><dt>대상</dt><dd>예비초1 ~ 중등</dd></div>
+<div><dt>수업 시간</dt><dd>월–금 오후 1시 – 7시 30분<small>초등부 1시–5시 · 중등부 5시 이후</small></dd></div>
+<div><dt>수업 방식</dt><dd>1:1 개별진도<small>한 타임 최대 6명</small></dd></div>
+<div><dt>수강료</dt><dd>상담 때 편하게 안내드려요</dd></div>
+<div><dt>주차</dt><dd>가능<small>학원 차량은 운행하지 않아요</small></dd></div>
+<div><dt>주소</dt><dd>울산광역시 울주군 범서읍 천상리 300 센트로시티상가 202호<small>메가커피 건물 2층</small></dd></div>
+<div><dt>전화</dt><dd>010-5590-4959</dd></div></dl>
+<div class="row">
+<button type="button" class="btn small" data-copy="울산광역시 울주군 범서읍 천상리 300 센트로시티상가 202호" data-msg="주소를 복사했어요">주소 복사</button>
+<a class="btn small ghost" href="https://map.naver.com/p/search/%EC%9A%B8%EC%82%B0%20%EC%9A%B8%EC%A3%BC%EA%B5%B0%20%EB%B2%94%EC%84%9C%EC%9D%8D%20%EC%B2%9C%EC%83%81%EB%A6%AC%20300" target="_blank" rel="noopener">지도에서 보기</a>
+<a class="btn small ghost" href="https://m.blog.naver.com/PostList.naver?blogId=cpfl9039&tab=1" target="_blank" rel="noopener">블로그 보기</a></div>
+<figure class="shot sign" style="--ar:5 / 6"><img src="photos/building.jpg" alt="건물 외벽에 걸린 매쓰조이수학 교습소 간판" loading="lazy"><figcaption><b>이 간판을 찾아 주세요</b><span>메가커피 건물 2층에 있어요.</span></figcaption></figure></section><footer><strong>매쓰조이수학 교습소</strong><span>울산광역시 울주군 범서읍 천상리 300 센트로시티상가 202호</span><span>교습소 신고번호 제3926호 · 전화 010-5590-4959</span><span>수강료는 상담 시 안내드립니다.</span></footer></div><div class="dock"><div class="in"><a class="btn block" href="#apply" data-go="apply">편하게 문의하기</a></div></div><div class="toast" id="toast" role="status" aria-live="polite" hidden></div><script>
+  var toast = document.getElementById("toast"), timer = null;
+  function showToast(m) { toast.textContent = m; toast.hidden = false; clearTimeout(timer); timer = setTimeout(function () { toast.hidden = true; }, 2600); }
+  function fallbackCopy(t) {
+    var ta = document.createElement("textarea"); ta.value = t; ta.setAttribute("readonly", "");
+    ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta); return ok;
+  }
+  document.querySelectorAll("[data-copy]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var t = b.getAttribute("data-copy"), m = b.getAttribute("data-msg") || "복사했어요";
+      function done(ok) { showToast(ok ? m : "복사가 안 돼요. 글자를 길게 눌러 복사해 주세요"); }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(function () { done(true); }, function () { done(fallbackCopy(t)); });
+      else done(fallbackCopy(t));
+    });
+  });
+  document.querySelectorAll("[data-go]").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      var t = document.getElementById(a.getAttribute("data-go"));
+      if (t && t.scrollIntoView) { e.preventDefault(); t.scrollIntoView({ behavior: "smooth", block: "start" }); }
+    });
+  });
+</script></body></html>
