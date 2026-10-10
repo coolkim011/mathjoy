@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://coolkim011.github.io/mathjoy/sitemap.xml
